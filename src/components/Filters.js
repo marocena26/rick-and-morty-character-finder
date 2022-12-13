@@ -2,6 +2,7 @@
 import FilterByName from "./FilterByName";
 import FilterBySpecies from "./FilterBySpecies";
 import FilterByStatus from "./FilterByStatus";
+import ResetBtn from "./ResetBtn";
 
 function Filters(props) {
   //Función handle para que no se nos envie el formulario automáticamente.
@@ -24,6 +25,7 @@ function Filters(props) {
         handleFilterByStatus={props.handleFilterByStatus}
         filterByStatus={props.filterByStatus}
       ></FilterByStatus>
+      <ResetBtn handleResetBtn={props.handleResetBtn} />
     </form>
   );
 }

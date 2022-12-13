@@ -58,6 +58,17 @@ function App() {
     setFilterByStatus(value);
   };
 
+  //Reset button
+  const handleResetBtn = () => {
+    //Limpiamos todos los datos al hacer click, incluidos los datos del LS.
+    setFilterByName("");
+    setFilterBySpecies("");
+    setFilterByStatus("all");
+    ls.remove("filterByName");
+    ls.remove("filterBySpecies");
+    ls.remove("filterByStatus");
+  };
+
   //Router
   const findCharacter = (id) => {
     return dataCharacters.find((oneCharacter) => oneCharacter.id === id);
@@ -79,6 +90,7 @@ function App() {
                   filterBySpecies={filterBySpecies}
                   handleFilterByStatus={handleFilterByStatus}
                   filterByStatus={filterByStatus}
+                  handleResetBtn={handleResetBtn}
                 />
                 <CharacterList
                   dataCharacters={dataCharacters}
