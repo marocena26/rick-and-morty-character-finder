@@ -1,14 +1,12 @@
-import { useEffect, useState } from "react";
-import getDataFromAPI from "../services/api.js";
+import { useEffect } from "react";
+import callToApi from "../services/api";
 import "../styles/App.scss";
 
 function App() {
-  const [dataCharacter, setDataCharacter] = useState([]); //VARIABLE ESTADO para guardar los datos de la API
-
-  //En el ejecutare api.js
   useEffect(() => {
-    getDataFromAPI().then((dataEachCharacter) => {
-      setDataCharacter(dataEachCharacter);
+    callToApi().then((characters) => {
+      //llamo al fetch que he creado en api.js, por parámetro le paso el nuevo objeto que he creado (le llamamos cleanData para conservar el mismo nombre, pero se puede llamar de cualquier manera.)
+      console.log(characters);
     });
   }, []);
 
