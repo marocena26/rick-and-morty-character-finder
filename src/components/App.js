@@ -27,6 +27,10 @@ function App() {
   const [filterBySpecies, setFilterBySpecies] = useState(
     ls.get("filterBySpecies", "")
   );
+  //FilterByStatus input
+  const [filterByStatus, setFilterByStatus] = useState(
+    ls.get("filterByStatus", "all")
+  );
 
   //Effects
   useEffect(() => {
@@ -48,6 +52,12 @@ function App() {
     setFilterBySpecies(value);
   };
 
+  //función handle para filtrar en el buscador por estatus
+  const handleFilterByStatus = (value) => {
+    ls.get("filterByStatus", value);
+    setFilterByStatus(value);
+  };
+
   //Router
   const findCharacter = (id) => {
     return dataCharacters.find((oneCharacter) => oneCharacter.id === id);
@@ -67,11 +77,14 @@ function App() {
                   filterByName={filterByName}
                   handleFilterBySpecies={handleFilterBySpecies}
                   filterBySpecies={filterBySpecies}
+                  handleFilterByStatus={handleFilterByStatus}
+                  filterByStatus={filterByStatus}
                 />
                 <CharacterList
                   dataCharacters={dataCharacters}
                   filterByName={filterByName}
                   filterBySpecies={filterBySpecies}
+                  filterByStatus={filterByStatus}
                 />
               </>
             }

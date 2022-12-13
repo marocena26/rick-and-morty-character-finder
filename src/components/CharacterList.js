@@ -5,6 +5,7 @@ const CharacterList = ({
   dataCharacters,
   filterByName = "",
   filterBySpecies = "",
+  filterByStatus = "",
 }) => {
   //Fución para pintar en el HTML la lista de personajes.
   const renderCharacterCards = dataCharacters
@@ -16,6 +17,11 @@ const CharacterList = ({
       filterBySpecies === ""
         ? true
         : characters.species.toLowerCase() === filterBySpecies.toLowerCase()
+    )
+    .filter((characters) =>
+      filterByStatus === "all"
+        ? true
+        : characters.status.toLowerCase() === filterByStatus.toLowerCase()
     )
 
     //map: por cada elemento del array,retornaré un LI con los valores variables de cada personaje.
