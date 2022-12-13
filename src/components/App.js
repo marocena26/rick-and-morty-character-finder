@@ -1,21 +1,23 @@
 import { useEffect, useState } from "react";
 import callToApi from "../services/api";
 import "../styles/App.scss";
+import CharacterList from "./CharacterList";
 
 function App() {
   //STATE VARIABLES
-  const [dataUser, setDataUser] = useState([]);
+  const [dataCharacters, setDataCharacters] = useState([]);
 
   useEffect(() => {
     callToApi().then((characters) => {
-      setDataUser(characters);
+      setDataCharacters(characters);
     });
   }, []);
 
   return (
-    <div>
+    <>
       <h1>Hola mundo</h1>
-    </div>
+      <CharacterList eachCharacter={dataCharacters}></CharacterList>
+    </>
   );
 }
 
