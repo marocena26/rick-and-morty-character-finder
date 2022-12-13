@@ -1,0 +1,27 @@
+@import "../core/functions";
+@import "../core/variables";
+@import "../core/mixins";
+
+.section {
+  background-color: $black;
+  &__ul {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    text-decoration: none;
+    @include tablet {
+      grid-template-columns: auto auto;
+      gap: 30px;
+      padding-top: 50px;
+    }
+    @include desktop {
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto auto auto auto;
+      gap: 60px;
+      padding-top: 60px;
+    }
+  }
+}

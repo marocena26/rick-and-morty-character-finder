@@ -1,0 +1,61 @@
+@import "../core/functions";
+@import "../core/variables";
+@import "../core/mixins";
+
+.character {
+  text-decoration: none;
+  &__card {
+    width: 135px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    gap: 13px;
+    background-color: $pacific-blue;
+    color: $black;
+    font-size: rem(9);
+    @include tablet {
+      width: 200px;
+      font-size: rem(16);
+    }
+    @include desktop {
+      width: 250px;
+      font-size: rem(19);
+    }
+
+    &--image {
+      width: 100%;
+      height: 140px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include tablet {
+        height: 200px;
+      }
+      @include desktop {
+        height: 250px;
+      }
+    }
+    &--title {
+      margin-left: 10px;
+      font-weight: 800;
+      text-decoration: none;
+      @include tablet {
+        margin-left: 9px;
+      }
+      @include desktop {
+        margin-left: 20px;
+      }
+    }
+    &--species {
+      margin-left: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      @include tablet {
+        margin-left: 9px;
+      }
+      @include desktop {
+        margin-left: 20px;
+      }
+    }
+  }
+}

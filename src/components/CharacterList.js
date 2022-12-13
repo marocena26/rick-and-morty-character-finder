@@ -1,4 +1,5 @@
 import CharacterCard from "./CharacterCard";
+import "../styles/components/CharacterList.scss";
 
 const CharacterList = ({ dataCharacters, filterByName = "" }) => {
   //Fución para pintar en el HTML la lista de personajes.
@@ -12,7 +13,7 @@ const CharacterList = ({ dataCharacters, filterByName = "" }) => {
     .map((characters) => {
       return (
         <>
-          <li key={characters.id}>
+          <li key={characters.id} className="list">
             <CharacterCard character={characters} />
           </li>
         </>

@@ -1,5 +1,5 @@
 //components
-import FilterByName from "../FilterByName";
+import FilterByName from "./FilterByName";
 
 function Filters(props) {
   //Función handle para que no se nos envie el formulario automáticamente.
