@@ -7,6 +7,7 @@ import callToApi from "../services/api";
 import ls from "../services/localstorage";
 
 //components
+import Header from "./Header";
 import CharacterList from "./characters/CharacterList";
 import CharacterDetail from "./characters/CharacterDetail";
 import Filters from "./filters/Filters";
@@ -44,27 +45,30 @@ function App() {
 
   return (
     <>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Filters
-                handleFilterByName={handleFilterByName}
-                filterByName={filterByName}
-              />
-              <CharacterList
-                dataCharacters={dataCharacters}
-                filterByName={filterByName}
-              />
-            </>
-          }
-        ></Route>
-        <Route
-          path="/character/:id"
-          element={<CharacterDetail findCharacter={findCharacter} />}
-        ></Route>
-      </Routes>
+      <Header />
+      <main className="main">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Filters
+                  handleFilterByName={handleFilterByName}
+                  filterByName={filterByName}
+                />
+                <CharacterList
+                  dataCharacters={dataCharacters}
+                  filterByName={filterByName}
+                />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/character/:id"
+            element={<CharacterDetail findCharacter={findCharacter} />}
+          ></Route>
+        </Routes>
+      </main>
     </>
   );
 }
