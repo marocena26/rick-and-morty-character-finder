@@ -21,7 +21,7 @@ function App() {
   const [dataCharacters, setDataCharacters] = useState([]);
   //Filters:
   //FilterByName input
-  const [filterByName, setFilterByName] = useState("");
+  const [filterByName, setFilterByName] = useState(ls.get("filterByName", ""));
 
   //Effects
   useEffect(() => {
@@ -33,6 +33,7 @@ function App() {
   //Handlers
   const handleFilterByName = (value) => {
     setFilterByName(value);
+    ls.set("filterByName", value);
   };
   return (
     <>
