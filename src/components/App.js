@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import callToApi from "../services/api";
 import "../styles/App.scss";
 import CharacterList from "./CharacterList";
+import Header from "./Header";
 
 function App() {
   //STATE VARIABLES
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <>
+      <Header></Header>
       <h1>Hola mundo</h1>
       <CharacterList eachCharacter={dataCharacters}></CharacterList>
     </>

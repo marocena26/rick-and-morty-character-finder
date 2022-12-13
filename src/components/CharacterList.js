@@ -6,8 +6,8 @@ const CharacterList = ({ eachCharacter }) => {
   });
 
   return (
-    <section>
-      <ul>{renderCharacterCards}</ul>
+    <section className="section">
+      <ul className="section__ul">{renderCharacterCards}</ul>
     </section>
   );
 };
