@@ -1,0 +1,33 @@
+@import "../core/variables";
+@import "../core/mixins";
+@import "../core/functions";
+
+.filter {
+  &__name {
+    margin-right: 10px;
+    color: $cultured;
+    font-family: $font-family-roboto;
+    font-size: rem(17);
+  }
+  &__input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 4px;
+    width: 160px;
+    background-color: $black;
+    color: $cultured;
+    border: 2px solid $pacific-blue;
+    font-family: $font-family-roboto;
+    font-size: rem(15);
+
+    @include tablet {
+      margin-top: 15px;
+      padding: 10px;
+      width: 330px;
+    }
+    @include desktop {
+      padding: 10px;
+      width: 450px;
+    }
+  }
+}
