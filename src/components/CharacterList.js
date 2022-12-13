@@ -1,13 +1,22 @@
 import CharacterCard from "./CharacterCard";
 import "../styles/components/CharacterList.scss";
 
-const CharacterList = ({ dataCharacters, filterByName = "" }) => {
+const CharacterList = ({
+  dataCharacters,
+  filterByName = "",
+  filterBySpecies = "",
+}) => {
   //Fución para pintar en el HTML la lista de personajes.
   const renderCharacterCards = dataCharacters
     //filter: recibe por parametro cada elemento, retornará los personajes que cumplan con la condición.
     .filter((characters) => {
       return characters.name.toLowerCase().includes(filterByName.toLowerCase());
     })
+    .filter((characters) =>
+      filterBySpecies === ""
+        ? true
+        : characters.species.toLowerCase() === filterBySpecies.toLowerCase()
+    )
 
     //map: por cada elemento del array,retornaré un LI con los valores variables de cada personaje.
     .map((characters) => {

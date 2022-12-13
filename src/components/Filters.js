@@ -1,5 +1,6 @@
 //components
 import FilterByName from "./FilterByName";
+import FilterBySpecies from "./FilterBySpecies";
 
 function Filters(props) {
   //Función handle para que no se nos envie el formulario automáticamente.
@@ -13,6 +14,10 @@ function Filters(props) {
         handleFilterByName={props.handleFilterByName}
         filterByName={props.filterByName}
       />
+      <FilterBySpecies
+        handleFilterBySpecies={props.handleFilterBySpecies}
+        filterBySpecies={props.filterBySpecies}
+      ></FilterBySpecies>
     </form>
   );
 }

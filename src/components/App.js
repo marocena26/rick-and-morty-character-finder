@@ -23,6 +23,10 @@ function App() {
   //Filters:
   //FilterByName input - filtramos por nombre
   const [filterByName, setFilterByName] = useState(ls.get("filterByName", ""));
+  //FilterBySpecies input - filtramos por especie
+  const [filterBySpecies, setFilterBySpecies] = useState(
+    ls.get("filterBySpecies", "")
+  );
 
   //Effects
   useEffect(() => {
@@ -36,6 +40,12 @@ function App() {
   const handleFilterByName = (value) => {
     ls.set("filterByName", value);
     setFilterByName(value);
+  };
+
+  //función handle para filtrar en el buscador por especie
+  const handleFilterBySpecies = (value) => {
+    ls.get("filterBySpecies", value);
+    setFilterBySpecies(value);
   };
 
   //Router
@@ -55,10 +65,13 @@ function App() {
                 <Filters
                   handleFilterByName={handleFilterByName}
                   filterByName={filterByName}
+                  handleFilterBySpecies={handleFilterBySpecies}
+                  filterBySpecies={filterBySpecies}
                 />
                 <CharacterList
                   dataCharacters={dataCharacters}
                   filterByName={filterByName}
+                  filterBySpecies={filterBySpecies}
                 />
               </>
             }
