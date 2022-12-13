@@ -1,12 +1,25 @@
+//react libraries
 import { useEffect, useState } from "react";
+
+//services
 import callToApi from "../services/api";
-import "../styles/App.scss";
-import CharacterList from "./CharacterList";
+
+//components
 import Header from "./Header";
+import CharacterList from "./CharacterList";
+import Filters from "./Filters";
+
+//styles
+import "../styles/App.scss";
 
 function App() {
   //STATE VARIABLES
+  //Data
+  //Character list to fill with returned data from API call
   const [dataCharacters, setDataCharacters] = useState([]);
+
+  //Filters
+  //FilterByName input
 
   useEffect(() => {
     callToApi().then((characters) => {
@@ -16,9 +29,11 @@ function App() {
 
   return (
     <>
-      <Header></Header>
-      <h1>Hola mundo</h1>
-      <CharacterList eachCharacter={dataCharacters}></CharacterList>
+      {/* <Header></Header> */}
+      <main>
+        <Filters></Filters>
+        <CharacterList eachCharacter={dataCharacters}></CharacterList>
+      </main>
     </>
   );
 }
