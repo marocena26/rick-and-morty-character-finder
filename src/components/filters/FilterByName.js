@@ -4,6 +4,7 @@ function FilterByName(props) {
   };
 
   return (
+    //Filtro que nos devolverá el personaje cuyo valor corresponda a lo que la usuaria haya escrito en el input.
     <>
       <label htmlFor="name"></label>
       <input

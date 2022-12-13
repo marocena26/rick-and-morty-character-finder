@@ -1,9 +1,8 @@
 //components
 import FilterByName from "./FilterByName";
-// import FilterBySpecies from "./FilterBySpecies";
-//styles
 
 function Filters(props) {
+  //Función handle para que no se nos envie el formulario automáticamente.
   const handleSubmit = (ev) => {
     ev.preventDefault();
   };
