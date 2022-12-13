@@ -1,16 +1,20 @@
 //components
-// import FilterByName from "./FilterByName";
+import FilterByName from "./FilterByName";
 // import FilterBySpecies from "./FilterBySpecies";
 //styles
 
-function Filters() {
+function Filters(props) {
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+  };
+
   return (
-    <section>
-      <form>
-        {/* <FilterByName />
-        <FilterBySpecies /> */}
-      </form>
-    </section>
+    <form onSubmit={handleSubmit}>
+      <FilterByName
+        handleFilterByName={props.handleFilterByName}
+        filterByName={props.filterByName}
+      />
+    </form>
   );
 }
 
