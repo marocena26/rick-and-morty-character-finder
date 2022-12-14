@@ -3,8 +3,10 @@ import { useParams } from "react-router-dom";
 
 function CharacterDetail({ findCharacter }) {
   const params = useParams();
+  // console.log(params);
 
   const characterDetail = findCharacter(params.id);
+  console.log(characterDetail);
 
   return (
     <>

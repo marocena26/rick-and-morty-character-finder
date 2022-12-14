@@ -48,13 +48,13 @@ function App() {
 
   //función handle para filtrar en el buscador por especie
   const handleFilterBySpecies = (value) => {
-    ls.get("filterBySpecies", value);
+    ls.set("filterBySpecies", value);
     setFilterBySpecies(value);
   };
 
   //función handle para filtrar en el buscador por estatus
   const handleFilterByStatus = (value) => {
-    ls.get("filterByStatus", value);
+    ls.set("filterByStatus", value);
     setFilterByStatus(value);
   };
 
@@ -71,7 +71,9 @@ function App() {
 
   //Router
   const findCharacter = (id) => {
-    return dataCharacters.find((oneCharacter) => oneCharacter.id === id);
+    return dataCharacters.find(
+      (oneCharacter) => oneCharacter.id === parseInt(id)
+    );
   };
 
   return (

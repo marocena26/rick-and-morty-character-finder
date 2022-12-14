@@ -27,11 +27,9 @@ const CharacterList = ({
     //map: por cada elemento del array,retornaré un LI con los valores variables de cada personaje.
     .map((characters) => {
       return (
-        <>
-          <li key={characters.id} className="list">
-            <CharacterCard character={characters} />
-          </li>
-        </>
+        <li key={characters.id} className="list">
+          <CharacterCard character={characters} />
+        </li>
       );
     });
 

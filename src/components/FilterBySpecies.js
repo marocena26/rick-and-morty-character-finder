@@ -1,3 +1,4 @@
+import "../styles/components/FilterBySpecies.scss";
 function FilterBySpecies(props) {
   const handleBySpecies = (ev) => {
     props.handleFilterBySpecies(ev.target.value);
