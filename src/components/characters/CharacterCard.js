@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../styles/components/CharacterCard.scss";
+import PropTypes from "prop-types";
 
 function CharacterCard({ character }) {
   //Pinto cada personaje, aquí escribo el HTML con los datos variables.
@@ -17,4 +18,9 @@ function CharacterCard({ character }) {
     </Link>
   );
 }
+
+CharacterCard.propTypes = {
+  character: PropTypes.object,
+};
+
 export default CharacterCard;

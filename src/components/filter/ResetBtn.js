@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../../styles/components/ResetBtn.scss";
 
 function ResetBtn({ handleResetBtn }) {
@@ -11,5 +12,9 @@ function ResetBtn({ handleResetBtn }) {
     </button>
   );
 }
+
+ResetBtn.propTypes = {
+  handleReset: PropTypes.func,
+};
 
 export default ResetBtn;

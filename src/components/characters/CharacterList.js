@@ -1,4 +1,5 @@
 import CharacterCard from "./CharacterCard";
+import PropTypes from "prop-types";
 import "../../styles/components/CharacterList.scss";
 
 const CharacterList = ({
@@ -48,6 +49,13 @@ const CharacterList = ({
       </ul>
     </section>
   );
+};
+
+CharacterList.propTypes = {
+  dataCharacters: PropTypes.array,
+  filterByName: PropTypes.string.isRequired,
+  filterBySpecies: PropTypes.string.isRequired,
+  filterByStatus: PropTypes.string.isRequired,
 };
 
 export default CharacterList;

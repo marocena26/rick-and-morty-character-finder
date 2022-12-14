@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 //components
 import FilterByName from "./FilterByName";
 import FilterBySpecies from "./FilterBySpecies";
@@ -24,7 +25,6 @@ function Filters(props) {
           filterBySpecies={props.filterBySpecies}
         ></FilterBySpecies>
         <FilterByStatus
-          filterBySpecies={props.filterBySpecies}
           handleFilterByStatus={props.handleFilterByStatus}
           filterByStatus={props.filterByStatus}
         ></FilterByStatus>
@@ -33,5 +33,15 @@ function Filters(props) {
     </>
   );
 }
+
+Filters.propTypes = {
+  handleFilterByName: PropTypes.func.isRequired,
+  filterByName: PropTypes.string,
+  handleFilterBySpecies: PropTypes.func.isRequired,
+  filterBySpecies: PropTypes.string,
+  handleFilterByStatus: PropTypes.func.isRequired,
+  filterByStatus: PropTypes.string,
+  handleResetBtn: PropTypes.func,
+};
 
 export default Filters;

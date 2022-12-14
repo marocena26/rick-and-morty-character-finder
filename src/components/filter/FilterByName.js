@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../../styles/components/FilterByName.scss";
 
 function FilterByName(props) {
@@ -25,5 +26,10 @@ function FilterByName(props) {
     </>
   );
 }
+
+FilterByName.propTypes = {
+  handleFilterByName: PropTypes.func.isRequired,
+  filterByName: PropTypes.string,
+};
 
 export default FilterByName;

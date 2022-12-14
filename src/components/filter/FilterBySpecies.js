@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../../styles/components/FilterBySpecies.scss";
 function FilterBySpecies(props) {
   const handleBySpecies = (ev) => {
@@ -21,5 +22,10 @@ function FilterBySpecies(props) {
     </fieldset>
   );
 }
+
+FilterBySpecies.propTypes = {
+  handleFilterBySpecies: PropTypes.func.isRequired,
+  filterBySpecies: PropTypes.string,
+};
 
 export default FilterBySpecies;

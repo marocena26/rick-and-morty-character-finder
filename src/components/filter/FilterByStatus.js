@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "../../styles/components/FilterByStatus.scss";
 
 function FilterByStatus(props) {
@@ -10,7 +11,7 @@ function FilterByStatus(props) {
       <div className="form__radio--wrap">
         <legend className="form__radio--legend">By Status:</legend>
         <label htmlFor="all" className="form__radio--name">
-          <i class="fa-solid fa-thumbtack"></i>
+          <i className="fa-solid fa-thumbtack"></i>
           <input
             type="radio"
             id="all"
@@ -47,7 +48,7 @@ function FilterByStatus(props) {
           />
         </label>
         <label htmlFor="dead" className="form__radio--name">
-          <i class="fa-sharp fa-solid fa-question"></i>
+          <i className="fa-sharp fa-solid fa-question"></i>
           <input
             type="radio"
             id="unknown"
@@ -62,5 +63,10 @@ function FilterByStatus(props) {
     </fieldset>
   );
 }
+
+FilterByStatus.propTypes = {
+  handleFilterByStatus: PropTypes.func.isRequired,
+  filterByStatus: PropTypes.string,
+};
 
 export default FilterByStatus;
