@@ -6,10 +6,9 @@ function Header() {
   return (
     <header className="header">
       <NavLink to="/">
-        <header className="header">
-          <img src={logo} alt="Logo Rick and Morty" className="header__logo" />
-        </header>
+        <img src={logo} alt="Logo Rick and Morty" className="header__logo" />
       </NavLink>
+      <h1 className="header__title">Rick & Morty character finder!</h1>
     </header>
   );
 }

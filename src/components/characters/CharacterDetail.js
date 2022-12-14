@@ -87,7 +87,9 @@ function CharacterDetail({ findCharacter }) {
         </main>
       ) : (
         <>
-          <p className="text__error">ERROR: character not found.</p>
+          <p className="text__error">
+            ERROR: The character you are looking for doesn't exist.
+          </p>
           <Link to="/" className="detail__back">
             <button className="detail__back--button">Go back</button>
           </Link>
