@@ -42,7 +42,7 @@ const CharacterList = ({
           <p className="section__ul--text ">
             Oops, We couldn't find any character named{" "}
             <span className="section__ul--text--details">{filterByName}.</span>
-            Try again with another one!
+            Try again with another one or press reset button!
           </p>
         )}
       </ul>
