@@ -9,9 +9,17 @@ function CharacterDetail({ findCharacter }) {
   //Icon for dead or alive
   const renderIconSpecies = () => {
     if (characterDetail.species === "Alien") {
-      return <i className="fa-brands fa-reddit-alien"></i>;
+      return (
+        <span>
+          Alien <i className="fa-brands fa-reddit-alien"></i>
+        </span>
+      );
     } else if (characterDetail.species === "Human") {
-      return <i className="fa-solid fa-user"></i>;
+      return (
+        <span>
+          Human <i className="fa-solid fa-user"></i>
+        </span>
+      );
     } else {
       return null;
     }
@@ -19,11 +27,23 @@ function CharacterDetail({ findCharacter }) {
   //Icon for alien or human
   const renderIconStatus = () => {
     if (characterDetail.status === "Alive") {
-      return <i className="fa-solid fa-heart"></i>;
+      return (
+        <span>
+          Alive <i className="fa-solid fa-heart"></i>
+        </span>
+      );
     } else if (characterDetail.status === "Dead") {
-      return <i className="fa-solid fa-skull"></i>;
+      return (
+        <span>
+          Dead <i className="fa-solid fa-skull"></i>
+        </span>
+      );
     } else {
-      return <span>Without information</span>;
+      return (
+        <span>
+          Unknown <i class="fa-sharp fa-solid fa-question"></i>
+        </span>
+      );
     }
   };
 

@@ -5,12 +5,12 @@ function FilterBySpecies(props) {
   };
 
   return (
-    <div className="form__select">
-      <label className="form__select--label">Species</label>
+    <fieldset className="form__select">
+      <label className="form__select--name">By Species:</label>
       <select
         name="species"
         id="species"
-        className="form__select--item"
+        className="form__select--input"
         value={props.filterBySpecies}
         onChange={handleBySpecies}
       >
@@ -18,7 +18,7 @@ function FilterBySpecies(props) {
         <option value="human">Human</option>
         <option value="alien">Alien</option>
       </select>
-    </div>
+    </fieldset>
   );
 }
 

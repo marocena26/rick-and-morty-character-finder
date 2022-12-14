@@ -5,7 +5,7 @@ function ResetBtn({ handleResetBtn }) {
   };
   return (
     <button type="reset" className="form__reset" onClick={handleReset}>
-      Reset
+      Reset filters
     </button>
   );
 }

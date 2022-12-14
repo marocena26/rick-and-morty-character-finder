@@ -8,16 +8,16 @@ function FilterByName(props) {
   return (
     //Filtro que nos devolverá el personaje cuyo valor corresponda a lo que la usuaria haya escrito en el input.
     <>
-      <fieldset className="filter">
-        <label htmlFor="name" className="filter__name">
-          Search
+      <fieldset className="form__filter">
+        <label htmlFor="name" className="form__filter--name">
+          By Name:
         </label>
         <input
           type="text"
           name="name"
           id="name"
-          className="filter__input"
-          placeholder="Morty Smith"
+          className="form__filter--input"
+          placeholder="Ex: Morty Smith"
           value={props.filterByName}
           onChange={handleByName}
         />

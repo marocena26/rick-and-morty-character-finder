@@ -1,9 +1,14 @@
-.main {
+.body {
   width: 100%;
   min-height: 100vh;
-  background-color: white;
+  background-color: $black;
+  font-family: $font-family-roboto;
+}
+
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
