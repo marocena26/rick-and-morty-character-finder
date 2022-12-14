@@ -3,23 +3,61 @@ import { useParams } from "react-router-dom";
 
 function CharacterDetail({ findCharacter }) {
   const params = useParams();
-  // console.log(params);
 
   const characterDetail = findCharacter(params.id);
-  console.log(characterDetail);
+
+  //Icon for dead or alive
+  const renderIconSpecies = () => {
+    if (characterDetail.species === "Alien") {
+      return <i className="fa-brands fa-reddit-alien"></i>;
+    } else if (characterDetail.species === "Human") {
+      return <i className="fa-solid fa-user"></i>;
+    } else {
+      return null;
+    }
+  };
+  //Icon for alien or human
+  const renderIconStatus = () => {
+    if (characterDetail.status === "Alive") {
+      return <i className="fa-solid fa-heart"></i>;
+    } else if (characterDetail.status === "Dead") {
+      return <i className="fa-solid fa-skull"></i>;
+    } else {
+      return <span>Without information</span>;
+    }
+  };
 
   return (
     <>
-      <Link to="/">Go home</Link>
-      <li className="card">
-        <img
-          className="card__image"
-          src={characterDetail.image}
-          alt={`Foto de ${characterDetail.name}`}
-        />
-        <h4 className="card__title">{characterDetail.name}</h4>
-        <p className="card__species">{characterDetail.species}</p>
-      </li>
+      <main className="main__detail">
+        <article className="article">
+          <Link to="/">Go home</Link>
+          <div className="article__detail">
+            <img
+              className="card__image"
+              src={characterDetail.image}
+              alt={`Foto de ${characterDetail.name}`}
+            />
+            <div className="detail__info">
+              <h2 className="card__title">{characterDetail.name}</h2>
+              <ul className="detail__info--list">
+                <li className="detail__info--list--item">
+                  <span>Status</span> <span>{renderIconStatus()}</span>
+                </li>
+                <li className="detail__info--list--item">
+                  <span>Species</span> <span>{renderIconSpecies()}</span>
+                </li>
+                <li className="detail__info--list--item">
+                  <span>Origin</span> <span>{characterDetail.origin}</span>
+                </li>
+                <li className="detail__info--list--item">
+                  <span>Episodes</span> <span>{characterDetail.episodes}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
     </>
   );
 }

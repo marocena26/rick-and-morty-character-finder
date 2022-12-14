@@ -3,7 +3,7 @@
 @import "../core/mixins";
 
 .section {
-  background-color: $black;
+  background-color: white;
   &__ul {
     display: grid;
     grid-template-columns: auto;

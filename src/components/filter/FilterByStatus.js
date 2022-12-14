@@ -18,7 +18,7 @@ function FilterByStatus(props) {
             onChange={handleByStatus}
           />
           <span className="form__radio--icon">
-            <i className="fa-solid fa-reply-all"></i>
+            <i class="fa-solid fa-thumbtack"></i>
           </span>
         </label>
         <label htmlFor="alive" className="form__radio--label">
