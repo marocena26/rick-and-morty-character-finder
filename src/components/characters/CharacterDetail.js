@@ -1,3 +1,5 @@
+import "../../styles/components/CharacterDetail.scss";
+
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
@@ -49,34 +51,38 @@ function CharacterDetail({ findCharacter }) {
 
   return (
     <>
-      <main className="main__detail">
-        <article className="article">
-          <Link to="/">Go home</Link>
-          <div className="article__detail">
-            <img
-              className="card__image"
-              src={characterDetail.image}
-              alt={`Foto de ${characterDetail.name}`}
-            />
-            <div className="detail__info">
-              <h2 className="card__title">{characterDetail.name}</h2>
-              <ul className="detail__info--list">
-                <li className="detail__info--list--item">
-                  <span>Status</span> <span>{renderIconStatus()}</span>
-                </li>
-                <li className="detail__info--list--item">
-                  <span>Species</span> <span>{renderIconSpecies()}</span>
-                </li>
-                <li className="detail__info--list--item">
-                  <span>Origin</span> <span>{characterDetail.origin}</span>
-                </li>
-                <li className="detail__info--list--item">
-                  <span>Episodes</span> <span>{characterDetail.episodes}</span>
-                </li>
-              </ul>
-            </div>
+      <main className="detail">
+        <article className="detail__article">
+          <img
+            className="detail__article--image"
+            src={characterDetail.image}
+            alt={`Foto de ${characterDetail.name}`}
+          />
+          <div>
+            <h2 className="detail__article--title">{characterDetail.name}</h2>
+            <ul className="list">
+              <li className="list__item">
+                <span className="list__item--detail">Status:</span>
+                <span>{renderIconStatus()}</span>
+              </li>
+              <li className="list__item">
+                <span className="list__item--detail">Species:</span>
+                <span>{renderIconSpecies()}</span>
+              </li>
+              <li className="list__item">
+                <span className="list__item--detail">Origin:</span>
+                <span>{characterDetail.origin}</span>
+              </li>
+              <li className="list__item">
+                <span className="list__item--detail">Episodes:</span>
+                <span>{characterDetail.episodes}</span>
+              </li>
+            </ul>
           </div>
         </article>
+        <Link to="/" className="detail__back">
+          <button className="detail__back--button">Go back</button>
+        </Link>
       </main>
     </>
   );
