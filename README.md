@@ -51,6 +51,8 @@ Siempre que quieras saber más acerca de algún personaje en concreto solo tendr
 
 Una de las particularidades de estas tarjetas es que la URL del detalle de personaje es compartible, es decir, que si visitamos esa URL directamente en el navegador podremos ver el detalle del personaje. De la misma manera, si el usuario navega a una URL inexistente recibirá otro mensaje de error avisándole de que la dirección no es correcta.
 
+![image](https://user-images.githubusercontent.com/113302094/207612499-2fbe436d-8077-477e-92e3-d388380d8004.png)
+
 
 ## Materiales utilizados ⚛️: 
 
