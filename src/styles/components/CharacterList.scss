@@ -17,7 +17,20 @@
     justify-content: center;
     text-decoration: none;
     &--text {
+      padding: 10px;
       color: $cultured;
+      width: 250px;
+      min-height: 100px;
+      border: 2px solid $pacific-blue;
+      line-height: 25px;
+      border-radius: 50px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      @include tablet {
+        margin-left: 200px;
+      }
+
       &--details {
         color: $pacific-blue;
       }
