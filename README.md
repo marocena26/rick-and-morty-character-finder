@@ -34,7 +34,7 @@ Ahora que ya tenemos el listado de personajes en pantalla, podremos buscar nuest
 
 ![image](https://user-images.githubusercontent.com/113302094/207609255-ef84eb59-69ef-478c-af48-f237d1b5bb8f.png)
 
-- **Estado**: selecciona el estado de tus personajes entre todas las opciones de la lista.
+- **Estado**: selecciona el estado de tus personajes entre todas las opciones de la lista 💀-❤️.
 
 ![image](https://user-images.githubusercontent.com/113302094/207609423-38daa1c4-5c33-4726-b2ff-c3ed2d95b2e0.png)
 
