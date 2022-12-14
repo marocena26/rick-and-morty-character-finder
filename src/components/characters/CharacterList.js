@@ -1,5 +1,5 @@
 import CharacterCard from "./CharacterCard";
-import "../styles/components/CharacterList.scss";
+import "../../styles/components/CharacterList.scss";
 
 const CharacterList = ({
   dataCharacters,
@@ -36,9 +36,15 @@ const CharacterList = ({
   return (
     <section className="section">
       <ul className="section__ul">
-        {renderCharacterCards.length > 0
-          ? renderCharacterCards
-          : "We couldn't find any character named " + filterByName + "."}
+        {renderCharacterCards.length > 0 ? (
+          renderCharacterCards
+        ) : (
+          <p className="section__ul--text ">
+            Oops, We couldn't find any character named{" "}
+            <span className="section__ul--text--details">{filterByName}</span>.
+            Try again with another one!
+          </p>
+        )}
       </ul>
     </section>
   );

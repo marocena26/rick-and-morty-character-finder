@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/components/CharacterCard.scss";
+import "../../styles/components/CharacterCard.scss";
 
 function CharacterCard({ character }) {
   //Pinto cada personaje, aquí escribo el HTML con los datos variables.

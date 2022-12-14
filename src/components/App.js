@@ -8,9 +8,9 @@ import ls from "../services/localstorage";
 
 //components
 import Header from "./Header";
-import CharacterList from "./CharacterList";
-import CharacterDetail from "./CharacterDetail";
-import Filters from "./Filters";
+import CharacterList from "./characters/CharacterList";
+import CharacterDetail from "./characters/CharacterDetail";
+import Filters from "./filter/Filters";
 
 //styles
 import "../styles/App.scss";

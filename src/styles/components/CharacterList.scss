@@ -12,6 +12,12 @@
     padding-bottom: 30px;
     padding-top: 40px;
     text-decoration: none;
+    &--text {
+      color: $cultured;
+      &--details {
+        color: $pacific-blue;
+      }
+    }
     @include tablet {
       grid-template-columns: auto auto;
       gap: 30px;
