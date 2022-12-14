@@ -1,0 +1,26 @@
+@import "../core/variables";
+@import "../core/functions";
+@import "../core/mixins";
+
+.form__radio {
+  padding: 10px 0 10px 0;
+  &--legend {
+    //padding: 10px 0 10px 0;
+    color: $cultured;
+    font-family: $font-family-roboto;
+    font-size: rem(17);
+  }
+  &--wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &--name {
+    color: $cultured;
+    font-family: $font-family-roboto;
+    font-weight: 400;
+    font-size: rem(14);
+  }
+  &--input {
+    font-size: rem(14);
+  }
+}

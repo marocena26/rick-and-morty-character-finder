@@ -1,3 +1,5 @@
+import "../../styles/components/FilterByStatus.scss";
+
 function FilterByStatus(props) {
   const handleByStatus = (ev) => {
     props.handleFilterByStatus(ev.target.value);
@@ -6,9 +8,9 @@ function FilterByStatus(props) {
   return (
     <fieldset className="form__radio">
       <legend className="form__radio--legend">By Status:</legend>
-      <div className="form__radio--container">
-        <label htmlFor="all" className="form__radio--label">
-          <i class="fa-solid fa-thumbtack"></i> All
+      <div className="form__radio--wrap">
+        <label htmlFor="all" className="form__radio--name">
+          <i class="fa-solid fa-thumbtack"></i>
           <input
             type="radio"
             id="all"
@@ -20,8 +22,8 @@ function FilterByStatus(props) {
           />
           <span className="form__radio--icon"></span>
         </label>
-        <label htmlFor="alive" className="form__radio--label">
-          <i className="form__radio--icon fa-solid fa-heart"></i> Alive
+        <label htmlFor="alive" className="form__radio--name">
+          <i className="form__radio--icon fa-solid fa-heart"></i>
           <input
             type="radio"
             id="alive"
@@ -32,8 +34,8 @@ function FilterByStatus(props) {
             onChange={handleByStatus}
           />
         </label>
-        <label htmlFor="dead" className="form__radio--label">
-          <i className="form__radio--icon fa-solid fa-skull"></i> Dead
+        <label htmlFor="dead" className="form__radio--name">
+          <i className="form__radio--icon fa-solid fa-skull"></i>
           <input
             type="radio"
             id="dead"
@@ -44,8 +46,8 @@ function FilterByStatus(props) {
             onChange={handleByStatus}
           />
         </label>
-        <label htmlFor="dead" className="form__radio--label">
-          <i class="fa-sharp fa-solid fa-question"></i> Unknown
+        <label htmlFor="dead" className="form__radio--name">
+          <i class="fa-sharp fa-solid fa-question"></i>
           <input
             type="radio"
             id="unknown"
