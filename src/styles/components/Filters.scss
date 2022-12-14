@@ -9,4 +9,10 @@
   //align-items: center;
   gap: 15px;
   padding: 10px;
+  @include tablet {
+    gap: 20px;
+  }
+  @include desktop {
+    gap: 25px;
+  }
 }

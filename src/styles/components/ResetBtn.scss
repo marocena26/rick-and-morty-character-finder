@@ -2,7 +2,7 @@
 @import "../core/functions";
 @import "../core/mixins";
 
-.form__reset {
+.reset {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,10 +11,15 @@
   color: $cultured;
   background-color: $pacific-blue;
   width: 160px;
-  padding: 10px 0 10px 0;
+  padding: 8px 0 8px 0;
+  margin: 10px;
   border: 2px solid $pacific-blue;
   border-radius: 50px;
   cursor: pointer;
+  @include tablet {
+    padding: 10px 0 10px 0;
+  }
+
   &:hover {
     background-color: $dark-sea-green;
     color: $black;
