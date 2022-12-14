@@ -1,7 +1,9 @@
-import "../../styles/components/CharacterDetail.scss";
+//react libraries
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+//styles
+import "../../styles/components/CharacterDetail.scss";
 
 function CharacterDetail({ findCharacter }) {
   const params = useParams();

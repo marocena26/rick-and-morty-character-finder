@@ -5,6 +5,7 @@
 .form__radio {
   &--legend {
     padding: 10px 0 10px 0;
+    margin-right: 10px;
     color: $cultured;
     font-family: $font-family-roboto;
     font-size: rem(17);
@@ -13,6 +14,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include desktop {
+      gap: 10px;
+    }
   }
   &--name {
     color: $cultured;

@@ -1,5 +1,8 @@
+//react libraries
 import PropTypes from "prop-types";
+//styles
 import "../../styles/components/FilterBySpecies.scss";
+
 function FilterBySpecies(props) {
   const handleBySpecies = (ev) => {
     props.handleFilterBySpecies(ev.target.value);

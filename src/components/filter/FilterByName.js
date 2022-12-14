@@ -1,4 +1,6 @@
+//react libraries
 import PropTypes from "prop-types";
+//styles
 import "../../styles/components/FilterByName.scss";
 
 function FilterByName(props) {

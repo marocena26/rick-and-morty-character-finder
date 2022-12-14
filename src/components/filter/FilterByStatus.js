@@ -1,4 +1,6 @@
+//react libraries
 import PropTypes from "prop-types";
+//styles
 import "../../styles/components/FilterByStatus.scss";
 
 function FilterByStatus(props) {
