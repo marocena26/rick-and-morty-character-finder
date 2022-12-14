@@ -124,3 +124,17 @@
     }
   }
 }
+
+.text__error {
+  padding: 10px;
+  color: $cultured;
+  width: 250px;
+  min-height: 50px;
+  border: 2px solid $pacific-blue;
+  line-height: 25px;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

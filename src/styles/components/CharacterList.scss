@@ -27,6 +27,7 @@
       text-align: center;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       @include tablet {
         margin-left: 200px;
       }

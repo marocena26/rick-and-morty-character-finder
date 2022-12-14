@@ -51,39 +51,48 @@ function CharacterDetail({ findCharacter }) {
 
   return (
     <>
-      <main className="detail">
-        <article className="detail__article">
-          <img
-            className="detail__article--image"
-            src={characterDetail.image}
-            alt={`Foto de ${characterDetail.name}`}
-          />
-          <div>
-            <h2 className="detail__article--title">{characterDetail.name}</h2>
-            <ul className="list">
-              <li className="list__item">
-                <span className="list__item--detail">Status:</span>
-                <span>{renderIconStatus()}</span>
-              </li>
-              <li className="list__item">
-                <span className="list__item--detail">Species:</span>
-                <span>{renderIconSpecies()}</span>
-              </li>
-              <li className="list__item">
-                <span className="list__item--detail">Origin:</span>
-                <span>{characterDetail.origin}</span>
-              </li>
-              <li className="list__item">
-                <span className="list__item--detail">Episodes:</span>
-                <span>{characterDetail.episodes}</span>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <Link to="/" className="detail__back">
-          <button className="detail__back--button">Go back</button>
-        </Link>
-      </main>
+      {characterDetail ? (
+        <main className="detail">
+          <article className="detail__article">
+            <img
+              className="detail__article--image"
+              src={characterDetail.image}
+              alt={`Foto de ${characterDetail.name}`}
+            />
+            <div>
+              <h2 className="detail__article--title">{characterDetail.name}</h2>
+              <ul className="list">
+                <li className="list__item">
+                  <span className="list__item--detail">Status:</span>
+                  <span>{renderIconStatus()}</span>
+                </li>
+                <li className="list__item">
+                  <span className="list__item--detail">Species:</span>
+                  <span>{renderIconSpecies()}</span>
+                </li>
+                <li className="list__item">
+                  <span className="list__item--detail">Origin:</span>
+                  <span>{characterDetail.origin}</span>
+                </li>
+                <li className="list__item">
+                  <span className="list__item--detail">Episodes:</span>
+                  <span>{characterDetail.episodes}</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <Link to="/" className="detail__back">
+            <button className="detail__back--button">Go back</button>
+          </Link>
+        </main>
+      ) : (
+        <>
+          <p className="text__error">ERROR: character not found.</p>
+          <Link to="/" className="detail__back">
+            <button className="detail__back--button">Go back</button>
+          </Link>
+        </>
+      )}
     </>
   );
 }
