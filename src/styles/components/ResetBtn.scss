@@ -1,0 +1,23 @@
+@import "../core/variables";
+@import "../core/functions";
+@import "../core/mixins";
+
+.form__reset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(17);
+  color: $cultured;
+  background-color: $pacific-blue;
+  width: 160px;
+  padding: 10px 0 10px 0;
+  border: 2px solid $pacific-blue;
+  border-radius: 50px;
+  cursor: pointer;
+  &:hover {
+    background-color: $dark-sea-green;
+    color: $black;
+    border: 2px solid $forest-green-traditional;
+  }
+}

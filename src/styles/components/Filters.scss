@@ -1,0 +1,12 @@
+@import "../core/variables";
+@import "../core/mixins";
+@import "../core/functions";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
+  gap: 15px;
+  padding: 10px;
+}

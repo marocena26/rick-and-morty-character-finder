@@ -3,31 +3,19 @@
 @import "../core/mixins";
 
 .form__select {
-  padding: 10px 0 10px 0;
   &--name {
     margin-right: 10px;
     color: $cultured;
-    font-family: $font-family-roboto;
     font-size: rem(17);
   }
   &--input {
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding: 4px;
+    padding: 5px 6px 5px 6px;
     width: 160px;
     background-color: $black;
     color: $cultured;
     border-radius: 50px;
     border: 2px solid $pacific-blue;
-    font-family: $font-family-roboto;
     font-size: rem(15);
-
-    @include tablet {
-      margin-top: 15px;
-      padding: 10px;
-    }
-    @include desktop {
-      padding: 10px;
-    }
+    cursor: pointer;
   }
 }
