@@ -12,6 +12,7 @@
   &--wrap {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   &--name {
     color: $cultured;

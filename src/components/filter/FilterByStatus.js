@@ -7,8 +7,8 @@ function FilterByStatus(props) {
 
   return (
     <fieldset className="form__radio">
-      <legend className="form__radio--legend">By Status:</legend>
       <div className="form__radio--wrap">
+        <legend className="form__radio--legend">By Status:</legend>
         <label htmlFor="all" className="form__radio--name">
           <i class="fa-solid fa-thumbtack"></i>
           <input
