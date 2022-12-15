@@ -4,6 +4,7 @@
 
 .section {
   padding: 20px;
+  width: 100%;
   @include tablet {
     padding: 30px;
   }

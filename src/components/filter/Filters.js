@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import FilterByName from "./FilterByName";
 import FilterBySpecies from "./FilterBySpecies";
 import FilterByStatus from "./FilterByStatus";
+import FilterByEpisodes from "./FilterByEpisodes";
 import ResetBtn from "./ResetBtn";
 //style
 import "../../styles/components/Filters.scss";
@@ -29,6 +30,10 @@ function Filters(props) {
           handleFilterByStatus={props.handleFilterByStatus}
           filterByStatus={props.filterByStatus}
         ></FilterByStatus>
+        <FilterByEpisodes
+          handleFilterByEpisodes={props.handleFilterByEpisodes}
+          filterByEpisodes={props.filterByEpisodes}
+        ></FilterByEpisodes>
       </form>
       <ResetBtn handleResetBtn={props.handleResetBtn} />
     </>
@@ -43,6 +48,8 @@ Filters.propTypes = {
   handleFilterByStatus: PropTypes.func.isRequired,
   filterByStatus: PropTypes.string,
   handleResetBtn: PropTypes.func,
+  filterByEpisodes: PropTypes.string,
+  handleByEpisodes: PropTypes.func.isRequired,
 };
 
 export default Filters;

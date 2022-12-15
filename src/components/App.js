@@ -32,6 +32,9 @@ function App() {
     ls.get("filterByStatus", "all")
   );
 
+  //FilterByepisodes
+  const [filterByEpisodes, setFilterByEpisodes] = useState(-1);
+
   //Effects
   useEffect(() => {
     callToApi().then((characters) => {
@@ -53,6 +56,12 @@ function App() {
   };
 
   //función handle para filtrar en el buscador por estatus
+  const handleFilterByEpisodes = (value) => {
+    setFilterByEpisodes(parseInt(value));
+  };
+
+  //función handle para filtrar en el buscador por episodio
+
   const handleFilterByStatus = (value) => {
     ls.set("filterByStatus", value);
     setFilterByStatus(value);
@@ -64,6 +73,7 @@ function App() {
     setFilterByName("");
     setFilterBySpecies("");
     setFilterByStatus("all");
+    setFilterByEpisodes(-1);
     ls.remove("filterByName");
     ls.remove("filterBySpecies");
     ls.remove("filterByStatus");
@@ -93,12 +103,15 @@ function App() {
                   handleFilterByStatus={handleFilterByStatus}
                   filterByStatus={filterByStatus}
                   handleResetBtn={handleResetBtn}
+                  filterByEpisodes={filterByEpisodes}
+                  handleFilterByEpisodes={handleFilterByEpisodes}
                 />
                 <CharacterList
                   dataCharacters={dataCharacters}
                   filterByName={filterByName}
                   filterBySpecies={filterBySpecies}
                   filterByStatus={filterByStatus}
+                  filterByEpisodes={filterByEpisodes}
                 />
               </>
             }
