@@ -10,9 +10,9 @@ The main objective is to create a **responsive website** with a list of **Rick a
 
 ## 👾 Description 
 
-Welcome to the Rick & Morty - character finder website! If you are interested in getting to know the Rick & Morty universe, you are in the right place.
+**Welcome to the Rick & Morty - character finder website!** If you are interested in getting to know the Rick & Morty universe, you are in the right place.
 
-In this repository we present you a simple, intuitive website adapted to any kind of device (mobile, tablet and PC) so you can take a look at it at any time. Designed and developed with HTML, Sass and React JS, you will find a detailed list of some of the Rick & Morty characters. 
+In this repository we present you a **simple, intuitive website adapted to any kind of device** (mobile, tablet and PC) so you can take a look at it at any time. **Designed and developed with HTML, Sass and React JS**, you will find a detailed list of some of the Rick & Morty characters. 
 
 ## 📝 Requirements
 
