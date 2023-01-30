@@ -1,88 +1,123 @@
-# Módulo 3:  Ejercicio de evaluación final👩🏻‍💻 
+# Rick & Morty - character finder! 👽🛸 
 
-Trabajo realizado por la alumna [María Elena Arocena López](https://github.com/marocena26) durante la evaluación final del Módulo 3: React. 
+## 🚀 Introduction
 
-En este repositorio podreis encontrar los ficheros generados en la realización de la **Evaluación final del Módulo 3 - Promo Radia**. 
+In this repository you can find the files generated in the **final evaluation of Module 3 - React** within **[Adalab](https://adalab.es/)'s Web Development Bootcamp - Promo Radia**.
 
-> **NOTA:** Enlace directo al poyecto pulsando **[aquí](https://beta.adalab.es/modulo-3-evaluacion-final-marocena26/)**
+The main objective is to create a **responsive website** with a list of **Rick and Morty characters**, we can **filter** by name, species and character status. The main **requirement** is that **React** is used for **development**.
 
-## Rick & Morty - character finder! 👽🛸 
+> **NOTE:** Direct link to the project by clicking on the following **[link](https://marocena26.github.io/rick-and-morty-character-finder/)**
 
-¡Bienvenido a la página web de **Rick & Morty - character finder**! Si estás interesado en conocer el universo de Rick & Morty estás en el lugar correcto.
+## 👾 Description 
 
-En este repositorio os presentamos una página web **sencilla, intuitiva y adaptada a cualquier tipo de dispositivo** (mócil, tablet y PC) para que podáis echarle un vistazo en cualquier momento. Maquetada y desarrollada con HTML, Sass y React JS, en ella encontraréis un listado detallado de algunos de los personajes de **Rick & Morty**.
+**Welcome to the Rick & Morty - character finder website!** If you are interested in getting to know the Rick & Morty universe, you are in the right place.
 
-![image](https://user-images.githubusercontent.com/113302094/207662957-bf77f7e0-4e83-4c60-ac7f-9f35e689f1f4.png)
+In this repository we present you a **simple, intuitive website adapted to any kind of device** (mobile, tablet and PC) so you can take a look at it at any time. **Designed and developed with HTML, Sass and React JS**, you will find a detailed list of some of the Rick & Morty characters. 
 
+## 📝 Requirements
 
-### 1. Listado de personajes 👾
+With a **'React Starter Kit' template** as the starter point, the exercise consists on developing a web-site using the following **elements**:
 
-Lo primero que encontraréis al acceder a nuestra página web será un **listado de personajes** de **Rick & Morty** ordenados alfabéticamente. Nos hemos servido de la siguiente [API](https://rickandmortyapi.com/documentation/#get-all-characters) para poder obtener la información sobre los primeros 20 personajes de la serie. En la tarjeta veremos los siguientes datos sobre cada uno de ellos: 
+- **HTML 5**
+- **Sass**
+- **Flexbox and CSS Grid**
+- **Media queries**
+- **Javascript**
+- **React framework**
+- **Interactions with the user**
+- **API request**
 
-- **Foto**
-- **Nombre**
-- **Especie**
+The following **requirements** have to be respected:
 
-![image](https://user-images.githubusercontent.com/113302094/207663194-fdac3617-0207-4549-9117-0108af9cfbe0.png)
+#### List of characters 
 
-### 2. Filtrado de personajes 🌈
+The first thing you will find when you access our website will be a list of Rick & Morty characters in **alphabetical order**. We have used the following API to obtain the information about the **first 20 characters of the series**. In the card we will see the following **information about** each of them:
 
-Ahora que ya tenemos el listado de personajes en pantalla, podremos buscar nuestros favoritos utilizando distintos tipos de filtro:
+- **Photo**
+- **Name**
+- **Species**
 
-- **Nombre**: no importa si lo escribes en minúsculas o mayúsculas, la web está programada para entender que ambas son igual de válidas. En cambio, si buscas un personaje que **no existe**, recibirás un mensaje de **error** para avisarte.
+#### Filtering characters 
 
-![image](https://user-images.githubusercontent.com/113302094/207663316-6f8bc01c-4317-46f4-98de-f7f2de9ca2d2.png)
+Now that we have the list of characters on the screen, we can **search for our favourites** using different types of **filters**:
 
-- **Especie**: con nuestro filtro podrás seleccionar qué personajes quieres que aparezcan por pantalla: si los **Human 👨🏻** o los **Alien 👽**
+- **Name**: it doesn't matter if you write it in lower or upper case, the web is programmed to understand that both are equally valid. On the other hand, if you search for a character that does not exist, you will receive an error message to warn you.
 
-![image](https://user-images.githubusercontent.com/113302094/207663466-99c4f3a2-7875-49e9-a39b-dd127e9094d2.png)
+<div id="header" align="center">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211937839-259d6a52-c832-4398-ba1d-474f2fde7e88.png">
+</div>
 
-- **Estado**: selecciona el estado de tus personajes entre todas las opciones de la lista 💀-❤️.
+- **Species**: with our filter you can select which characters you want to appear on the screen: whether Human 👨🏻 or Alien 👽.
 
-![image](https://user-images.githubusercontent.com/113302094/207663576-dc1e7d08-00ca-49ce-b962-9d18ded5520a.png)
+<div id="header" align="center">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211937761-ef9b8a16-5a28-4cfa-a226-02d9a2f59711.png">
+</div>
 
-Asimismo, la página web cuenta con un **botón de reset** para borrar todos los filtros.
+- **Status**: select the status of your characters from all the options in the 💀-❤️ list.
 
-Además, toda la **información** obtenida de los filtros quedará registrada en el **Almacenamiento Local** de tu dispositivo para que puedas volver a tu búsqueda anterior siempre que quieras sin perder la información.
+<div id="header" align="center">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211937938-3275a0e0-2906-45a4-bfa8-197f7ed07fa2.png">
+</div>
 
-![image](https://user-images.githubusercontent.com/113302094/207663960-f89545b4-2bf0-45f2-9c77-293f7c2d2be8.png)
+The website also has a **reset button to clear all filters**.
 
-### 3. Detalle de los personajes 📋
+In addition, all the information obtained from the filters will be **recorded in the Local Storage** of your device so that you can go back to your previous search whenever you want without losing the information.
 
-Siempre que quieras saber más acerca de algún personaje en concreto, solo tendrás que hacer **clic en su imagen para acceder a una ficha completa** del mismo.
+#### Detail of the characters
+Whenever you want to **know more about a specific character**, **just click on their image** to access a complete character profile.
 
-![image](https://user-images.githubusercontent.com/113302094/207664063-5a106b12-20cd-4cfb-a5cc-21e3a7b1bf4f.png)
+<div id="header" align="center">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211938017-2ee8732c-815d-4701-a475-89190cc6d411.png">
+</div>
 
-Una de las particularidades de estas tarjetas es que la **URL del detalle de personaje es compartible**, es decir, que si visitamos esa URL directamente en el navegador podremos ver el detalle del personaje. De la misma manera, si el usuario navega a una **URL inexistente**, recibirá otro mensaje de error avisándole de que la dirección **no es correcta**.
+One of the particularities of these cards is that the **URL of the character detail is shareable**, that is, if we visit that URL directly in the browser we will be able to see the character detail. In the same way, **if the user navigates to a non-existent URL**, they will receive another **error message** warning them that the address is not correct.
 
-![image](https://user-images.githubusercontent.com/113302094/207664241-18239628-ba02-4e34-ba2c-c743d31176e3.png)
+<div id="header" align="center">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211938079-018ec9f1-bfef-4303-ae62-e40504394799.png">
+</div>
 
+## 🛠️ Tools
 
-## Materiales utilizados ⚛️: 
+The project has been developed with **'React Starter Kit'**, a framework created in node and gulp that has pre-installed and pre-configured functionalities. It also contains an **HTML template engine**, a **Sass preprocessor** and a local server, among other elements.
 
-Para llevar a cabo el desarrollo de este ejercicio se han empleado los siguientes materiales:
-- Creación de un repositorio desde **GitHub Classroom.**
-- Una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas: React - Web starter kit**.
+The following tools have been used when solving the project:
 
-### Pasos que se han seguido para arrancar el proyecto🔌:
+- **HTML** (with partials for an easier lecture and project organization)
+- **CSS/Sass**
+  - **Variables, mixins and functions**
+  - **Flexbox**
+  - **CSS Grid**
+  - **Box model** (size, padding and margin)
+- **JavaScript library: React Native**
+  - **Local storage**
+  - Accessing and sending data to a server
+  - **Event management** in the browser
+  - **NodeJS**
+  - **API calls**: sending and retrieving data from a server
+  - **Tree structure**: organising the project with a tree-like hierarchy
+  - **Components**: identifies unique and reusable components
+  - **UseState**: state variables for all data manipulated by the user
+  - **Props**: information flow from parent to child components
+  - **Lifting**: work with events and move information upwards
+- **GIT version control**
+- **Task Automation: Gulp**
+- **JSON**
 
-1. **Creación del repositorio desde GitHub Classroom.**
-2. **Copiamos todos los ficheros** del Starter kit en la carpeta raíz del repositorio.
-3. Desde la carpeta raíz del repositorio **instalamos las dependencias** locales ejecutando en la terminal el comando:
+## 💾 Steps to follow to use this project on your computer:
 
-```bash
-npm install
-```
+> **NOTE:** This project has been carried out using **React Starter Kit**.
 
-### Pasos a seguir para utilizar este proyecto en vuestro ordenador💾:
+**First** of all, in order to have the repository on your computer:
 
-> **NOTA:** Este proyecto se ha realizado utilizando React.
+1. Click on the top right corner > **Fork**.
+2. It will ask you to choose which GitHub user you want to fork it to. **Choose your user**.
+3. **Go to github.com/your-user/name-of-project**, **clone it** and do whatever you want, you can rename the repo, change the code, redeploy it to GitHub Pages...
+4. **Finally** and for everything to work properly, **you must disable GitHub Pages and re-enable** it so that GitHub generates the new URL correctly.
 
-#### Pasos a seguir cada vez que se quiere arrancar un proyecto desde cero:
+Once you have **done the fork**:
 
-- Clona este repositorio en tu ordenador.
-- Ábrelo en tu editor de código.
-- Abre una terminal e instala las dependencias locales ejecutando en la terminal de comando. A contionuación os dejo las que he utilizado para arrancar mi proyecto:
+1. Open it in your code editor.
+2. Open a terminal and **install the local dependencies** by executing in the command terminal. Here are the ones I used to start my project:
 
 ```bash
 npm install 
@@ -91,17 +126,25 @@ npm install react-router-dom
 npm install prop-types
 ```
 
-#### Pasos para arrancar el proyecto:
 
-**El proyecto hay que arrancarlo cada vez que nos pongamoss a programar**, para ello ejecutaremos el comando:
+The project has to be **started** every time we start programming, to do this we will execute the **command**:
 
 ```bash
 npm start
 ```
+After running `npm start` we can start editing all the files inside the src/ folder and program comfortably 💫
 
-Después de ejecutar `npm start` ya podemos empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente 💫 .
+
+## ✅ Final result
+<div id="header" align="center">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/113302094/211938627-62693778-9271-45dd-b26f-a37ee86e922c.png">
+</div>
 
 
-## Feedback✨:
+## ✨ Feedback 
 
-Cualquier aportación será bien recibida, ¡Muchas gracias! 😉.
+Any input is most welcome.
+
+Thank you very much! 🤗
+
+
