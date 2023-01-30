@@ -3,6 +3,7 @@
 @import "../core/mixins";
 
 .reset {
+  font-family: $font-web;
   display: flex;
   flex-direction: column;
   justify-content: center;
