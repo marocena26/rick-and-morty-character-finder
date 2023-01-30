@@ -11,6 +11,7 @@ import Header from "./Header";
 import CharacterList from "./characters/CharacterList";
 import CharacterDetail from "./characters/CharacterDetail";
 import Filters from "./filter/Filters";
+import Footer from "./Footer";
 
 //styles
 import "../styles/App.scss";
@@ -79,6 +80,7 @@ function App() {
   return (
     <>
       <Header />
+      <div className="stars"></div>
       <main className="main">
         <Routes>
           <Route
@@ -109,6 +111,7 @@ function App() {
           ></Route>
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
