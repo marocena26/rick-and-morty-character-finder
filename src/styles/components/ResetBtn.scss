@@ -16,15 +16,18 @@
   margin: 10px;
   border: 2px solid $pacific-blue;
   border-radius: 50px;
+  box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(143, 212, 255),
+    0 0 15px rgb(143, 212, 255), 0 0 30px rgb(143, 212, 255),
+    0 0 40px rgb(143, 212, 255);
   cursor: pointer;
   @include tablet {
     padding: 10px 0 10px 0;
   }
 
   &:hover {
-    background-color: $dark-sea-green;
-    color: $black;
-    border: 2px solid $forest-green-traditional;
-    box-shadow: 2px 5px 51px $dark-sea-green;
+    background-color: $cultured;
+    color: $pacific-blue;
+    //border: 2px solid $forest-green-traditional;
+    //box-shadow: 2px 5px 51px $dark-sea-green;
   }
 }

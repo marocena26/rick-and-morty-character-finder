@@ -14,8 +14,10 @@ function CharacterCard({ character }) {
           src={character.image}
           alt={`Foto de ${character.name}`}
         />
-        <h2 className="character__card--title">{character.name}</h2>
-        <h3 className="character__card--species">{character.species}</h3>
+        <div className="character__card--wrap">
+          <h2 className="character__card--title">{character.name}</h2>
+          <h3 className="character__card--species">{character.species}</h3>
+        </div>
       </article>
     </Link>
   );
