@@ -22,6 +22,9 @@
         0 0 15px rgb(143, 212, 255), 0 0 30px rgb(143, 212, 255),
         0 0 40px rgb(143, 212, 255);
     }
+    &:active {
+      transform: scale(0.95) rotateZ(1.7deg);
+    }
     // @include tablet {
     //   width: 200px;
     //   min-height: 300px;

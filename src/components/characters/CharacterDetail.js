@@ -54,7 +54,7 @@ function CharacterDetail({ findCharacter }) {
   return (
     <>
       {characterDetail ? (
-        <main className="detail">
+        <section className="detail">
           <article className="detail__article">
             <img
               className="detail__article--image"
@@ -84,9 +84,9 @@ function CharacterDetail({ findCharacter }) {
             </div>
           </article>
           <Link to="/" className="detail__back">
-            <button className="detail__back--button">Go back</button>
+            <p className="detail__back--button">We'd better go back, Morty.</p>
           </Link>
-        </main>
+        </section>
       ) : (
         <>
           <p className="text__error">
