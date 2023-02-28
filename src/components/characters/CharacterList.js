@@ -2,6 +2,7 @@
 import PropTypes from "prop-types";
 //components
 import CharacterCard from "./CharacterCard";
+import error from "../../images/error-removebg-preview.png";
 //styles
 import "../../styles/components/CharacterList.scss";
 
@@ -43,11 +44,20 @@ const CharacterList = ({
         {renderCharacterCards.length > 0 ? (
           renderCharacterCards
         ) : (
-          <p className="section__ul--text ">
-            Oops, We couldn't find any character named{" "}
-            <span className="section__ul--text--details">{filterByName}.</span>
-            Try again with another one or press reset button!
-          </p>
+          <>
+            <img
+              src={error}
+              alt="Logo Rick and Morty"
+              className="section__ul--img"
+            />
+            <p className="section__ul--text ">
+              Oops, We couldn't find any character named{" "}
+              <span className="section__ul--text--details">
+                "{filterByName}"
+              </span>
+              Try again with another one or press reset button!
+            </p>
+          </>
         )}
       </ul>
     </section>
