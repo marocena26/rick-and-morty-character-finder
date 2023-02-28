@@ -8,12 +8,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: rem(17);
+  width: 160px;
+  padding: 8px 0;
+  margin: 10px;
+  font-size: rem(15);
   color: $cultured;
   background-color: $pacific-blue;
-  width: 160px;
-  padding: 8px 0 8px 0;
-  margin: 10px;
   border: 2px solid $pacific-blue;
   border-radius: 50px;
   box-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px rgb(143, 212, 255),
@@ -21,13 +21,12 @@
     0 0 40px rgb(143, 212, 255);
   cursor: pointer;
   @include tablet {
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
+    font-size: rem(17);
   }
 
   &:hover {
     background-color: $cultured;
     color: $pacific-blue;
-    //border: 2px solid $forest-green-traditional;
-    //box-shadow: 2px 5px 51px $dark-sea-green;
   }
 }

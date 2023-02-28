@@ -4,18 +4,20 @@
 
 .form__radio {
   &--legend {
-    padding: 10px 0 10px 0;
     margin-right: 10px;
     color: $cultured;
-    font-family: $font-web;
-    font-size: rem(17);
+    font-size: rem(15);
+    @include tablet {
+      font-size: rem(17);
+    }
   }
   &--wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    width: 258px;
     @include desktop {
-      gap: 10px;
+      width: 300px;
     }
   }
   &--name {
@@ -23,9 +25,16 @@
     font-family: $font-web;
     font-weight: 400;
     font-size: rem(14);
+
+    @include tablet {
+      font-size: rem(17);
+    }
   }
   &--input {
     font-size: rem(14);
     cursor: pointer;
+    @include tablet {
+      font-size: rem(17);
+    }
   }
 }

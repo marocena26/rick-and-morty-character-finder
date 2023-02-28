@@ -3,45 +3,12 @@
 @import "../core/mixins";
 
 .section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  @include tablet {
-    padding: 30px;
-  }
-  @include desktop {
-    padding: 50px;
-  }
   &__ul {
     display: grid;
     grid-template-columns: auto;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
-    //text-decoration: none;
-    &--img {
-      width: 150px;
-    }
-    &--text {
-      padding: 10px;
-      color: $cultured;
-      //width: 250px;
-      //min-height: 100px;
-      //border: 2px solid $pacific-blue;
-      line-height: 25px;
-      //border-radius: 50px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      @include tablet {
-        margin-left: 200px;
-      }
 
-      &--details {
-        color: $pacific-blue;
-      }
-    }
     @include tablet {
       grid-template-columns: auto auto;
       gap: 30px;
@@ -50,6 +17,28 @@
       grid-template-columns: auto auto auto auto;
       grid-template-rows: auto auto auto auto auto;
       gap: 60px;
+    }
+  }
+}
+
+.section__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  &--img {
+    width: 150px;
+  }
+  &--text {
+    padding: 10px;
+    color: $cultured;
+    line-height: 25px;
+    margin-bottom: 80px;
+    text-align: center;
+
+    &--details {
+      color: $pacific-blue;
     }
   }
 }

@@ -7,7 +7,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //height: 100vh;
 
   &__article {
     display: flex;
@@ -36,9 +35,9 @@
     @include desktop {
       width: 600px;
       min-height: 350px;
-      flex-direction: row;
       padding: 30px;
     }
+
     &--image {
       width: 160px;
       height: 160px;
@@ -71,26 +70,15 @@
 
   &__back {
     text-decoration: none;
-    @include tablet {
-      padding-top: 20px;
-    }
-    @include desktop {
-      padding-top: 30px;
-    }
+
     &--button {
       font-size: rem(17);
       font-weight: 700;
-      //text-transform: uppercase;
       color: $cultured;
-      //background-color: $pacific-blue;
-      //width: 160px;
-      //padding: 8px 0 8px 0;
-      margin: 10px;
-      //border: 2px solid $pacific-blue;
-      //border-radius: 50px;
+      margin: 30px 0;
       cursor: pointer;
       @include tablet {
-        padding: 10px 0 10px 0;
+        margin: 40px 0 60px 0;
       }
       &:hover {
         color: $pacific-blue;
@@ -121,16 +109,50 @@
   }
 }
 
-.text__error {
-  padding: 10px;
-  color: $cultured;
-  width: 250px;
-  min-height: 50px;
-  border: 2px solid $pacific-blue;
-  line-height: 25px;
-  border-radius: 50px;
-  text-align: center;
+.detail__back--img {
+  width: 600px;
+}
+
+.error {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: $cultured;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__text {
+    color: $cultured;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__img {
+    width: 300px;
+  }
+
+  &__back {
+    text-decoration: none;
+
+    &--button {
+      font-family: $font-web;
+      font-size: rem(15);
+      color: $cultured;
+
+      cursor: pointer;
+      @include tablet {
+        padding: 10px 0;
+        font-size: rem(17);
+      }
+
+      &:hover {
+        color: white;
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $dark-sea-green,
+          0 0 15px $dark-sea-green, 0 0 10px $dark-sea-green,
+          0 0 20px $dark-sea-green;
+      }
+    }
+  }
 }

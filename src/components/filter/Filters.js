@@ -29,8 +29,8 @@ function Filters(props) {
           handleFilterByStatus={props.handleFilterByStatus}
           filterByStatus={props.filterByStatus}
         ></FilterByStatus>
+        <ResetBtn handleResetBtn={props.handleResetBtn} />
       </form>
-      <ResetBtn handleResetBtn={props.handleResetBtn} />
     </>
   );
 }

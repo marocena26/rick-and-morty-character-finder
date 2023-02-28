@@ -40,20 +40,24 @@ const CharacterList = ({
 
   return (
     <section className="section">
-      <img src={error} alt="Logo Rick and Morty" className="section__ul--img" />
       <ul className="section__ul">
         {renderCharacterCards.length > 0 ? (
           renderCharacterCards
         ) : (
-          <>
-            <p className="section__ul--text ">
-              Oops, We couldn't find any character named{" "}
-              <span className="section__ul--text--details">
-                "{filterByName}"
+          <div className="section__error">
+            <img
+              src={error}
+              alt="Logo Rick and Morty"
+              className="section__error--img"
+            />
+            <p className="section__error--text">
+              Oops, We couldn't find any character named "
+              <span className="section__error--text--details">
+                {filterByName}
               </span>
-              Try again with another one or press reset button!
+              ". Try again with another one or press reset button!
             </p>
-          </>
+          </div>
         )}
       </ul>
     </section>

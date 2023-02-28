@@ -2,6 +2,8 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+//components
+import error from "../../images/error-removebg-preview (2).png";
 //styles
 import "../../styles/components/CharacterDetail.scss";
 
@@ -88,14 +90,16 @@ function CharacterDetail({ findCharacter }) {
           </Link>
         </section>
       ) : (
-        <>
-          <p className="text__error">
+        <div className="error">
+          <h3 className="error__title">Wubba Lubba Dub Dub!</h3>
+          <p className="error__text">
             ERROR: The character you are looking for doesn't exist.
           </p>
-          <Link to="/" className="detail__back">
-            <button className="detail__back--button">Go back</button>
+          <img src={error} alt="Logo Rick and Morty" className="error__img" />
+          <Link to="/" className="error__back">
+            <i className="fa-solid fa-chevron-left"></i> Go back
           </Link>
-        </>
+        </div>
       )}
     </>
   );
