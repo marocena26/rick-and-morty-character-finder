@@ -40,16 +40,12 @@ const CharacterList = ({
 
   return (
     <section className="section">
+      <img src={error} alt="Logo Rick and Morty" className="section__ul--img" />
       <ul className="section__ul">
         {renderCharacterCards.length > 0 ? (
           renderCharacterCards
         ) : (
           <>
-            <img
-              src={error}
-              alt="Logo Rick and Morty"
-              className="section__ul--img"
-            />
             <p className="section__ul--text ">
               Oops, We couldn't find any character named{" "}
               <span className="section__ul--text--details">

@@ -14,11 +14,11 @@
 
   @include tablet {
     height: 20vh;
-    padding: 20px;
+    //padding: 20px;
   }
   @include desktop {
     height: 25vh;
-    padding: 30px;
+    //padding: 30px;
   }
   &__logo {
     width: 100%;
