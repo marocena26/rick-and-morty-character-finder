@@ -44,20 +44,17 @@ Now that we have the list of characters on the screen, we can **search for our f
 - **Name**: it doesn't matter if you write it in lower or upper case, the web is programmed to understand that both are equally valid. On the other hand, if you search for a character that does not exist, you will receive an error message to warn you.
 
 <div id="header" align="center">
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211937839-259d6a52-c832-4398-ba1d-474f2fde7e88.png">
-</div>
+<img width="605" alt="image" src="https://user-images.githubusercontent.com/113302094/222126741-6fc05def-5192-48eb-9791-388bb4be3bb4.png"></div>
 
 - **Species**: with our filter you can select which characters you want to appear on the screen: whether Human 👨🏻 or Alien 👽.
 
 <div id="header" align="center">
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211937761-ef9b8a16-5a28-4cfa-a226-02d9a2f59711.png">
-</div>
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/222126892-a7c65e18-98cf-4ade-95fd-1e4d172bf1b7.png"></div>
 
 - **Status**: select the status of your characters from all the options in the 💀-❤️ list.
 
 <div id="header" align="center">
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211937938-3275a0e0-2906-45a4-bfa8-197f7ed07fa2.png">
-</div>
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/222126983-88b3be28-4456-4a8b-b136-c419751f90f2.png"></div>
 
 The website also has a **reset button to clear all filters**.
 
@@ -67,14 +64,12 @@ In addition, all the information obtained from the filters will be **recorded in
 Whenever you want to **know more about a specific character**, **just click on their image** to access a complete character profile.
 
 <div id="header" align="center">
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211938017-2ee8732c-815d-4701-a475-89190cc6d411.png">
-</div>
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/222127086-4554cf3e-7407-4395-8e57-d1a334ad315e.png"></div>
 
 One of the particularities of these cards is that the **URL of the character detail is shareable**, that is, if we visit that URL directly in the browser we will be able to see the character detail. In the same way, **if the user navigates to a non-existent URL**, they will receive another **error message** warning them that the address is not correct.
 
 <div id="header" align="center">
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/211938079-018ec9f1-bfef-4303-ae62-e40504394799.png">
-</div>
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/113302094/222127195-b43ad98f-bfd7-4dd9-bcf7-7084636ce596.png"></div>
 
 ## 🛠️ Tools
 
@@ -137,8 +132,7 @@ After running `npm start` we can start editing all the files inside the src/ fol
 
 ## ✅ Final result
 <div id="header" align="center">
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/113302094/211938627-62693778-9271-45dd-b26f-a37ee86e922c.png">
-</div>
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/113302094/222127578-d084a951-0411-47f3-bc28-ff2b836ad406.png"></div>
 
 
 ## ✨ Feedback 
