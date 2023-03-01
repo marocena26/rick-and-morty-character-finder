@@ -86,7 +86,8 @@ function CharacterDetail({ findCharacter }) {
             </div>
           </article>
           <Link to="/" className="detail__back">
-            <p className="detail__back--button">We'd better go back, Morty.</p>
+            <i className="fa-solid fa-chevron-left arrow"></i> We'd better go
+            back, Morty.
           </Link>
         </section>
       ) : (
@@ -97,7 +98,7 @@ function CharacterDetail({ findCharacter }) {
           </p>
           <img src={error} alt="Logo Rick and Morty" className="error__img" />
           <Link to="/" className="error__back">
-            <i className="fa-solid fa-chevron-left"></i> Go back
+            <i className="fa-solid fa-chevron-left arrow"></i> Go back
           </Link>
         </div>
       )}

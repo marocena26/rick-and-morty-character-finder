@@ -4,19 +4,24 @@
 
 .section {
   &__ul {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    // display: grid;
+    // grid-template-columns: auto;
     gap: 20px;
     justify-content: center;
 
     @include tablet {
-      grid-template-columns: auto auto;
+      // grid-template-columns: auto auto;
       gap: 30px;
     }
     @include desktop {
-      grid-template-columns: auto auto auto auto;
-      grid-template-rows: auto auto auto auto auto;
-      gap: 60px;
+      // grid-template-columns: auto auto auto auto;
+      // grid-template-rows: auto auto auto auto auto;
+      gap: 40px;
     }
   }
 }
@@ -29,12 +34,13 @@
 
   &--img {
     width: 150px;
+    margin-top: 40px;
   }
   &--text {
     padding: 10px;
     color: $cultured;
     line-height: 25px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     text-align: center;
 
     &--details {

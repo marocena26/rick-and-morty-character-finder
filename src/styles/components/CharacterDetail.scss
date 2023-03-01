@@ -70,19 +70,16 @@
 
   &__back {
     text-decoration: none;
-
-    &--button {
-      font-size: rem(17);
-      font-weight: 700;
-      color: $cultured;
-      margin: 30px 0;
-      cursor: pointer;
-      @include tablet {
-        margin: 40px 0 60px 0;
-      }
-      &:hover {
-        color: $pacific-blue;
-      }
+    font-size: rem(17);
+    font-weight: 700;
+    color: $cultured;
+    margin: 30px 0;
+    cursor: pointer;
+    @include tablet {
+      margin: 40px 0 60px 0;
+    }
+    &:hover {
+      color: $pacific-blue;
     }
   }
 }
@@ -118,41 +115,54 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 
   &__title {
     color: $cultured;
+    font-size: rem(18);
     font-weight: 700;
     text-align: center;
+    @include tablet {
+      font-size: rem(22);
+    }
   }
   &__text {
     color: $cultured;
+    font-size: rem(16);
     line-height: 25px;
     text-align: center;
+    @include tablet {
+      font-size: rem(20);
+    }
   }
   &__img {
     width: 300px;
+    @include tablet {
+      width: 350px;
+    }
   }
 
   &__back {
     text-decoration: none;
+    font-family: $font-web;
+    font-size: rem(15);
+    font-weight: 700;
+    color: $dark-sea-green;
 
-    &--button {
-      font-family: $font-web;
-      font-size: rem(15);
-      color: $cultured;
+    cursor: pointer;
+    @include tablet {
+      font-size: rem(22);
+    }
 
-      cursor: pointer;
-      @include tablet {
-        padding: 10px 0;
-        font-size: rem(17);
-      }
-
-      &:hover {
-        color: white;
-        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $dark-sea-green,
-          0 0 15px $dark-sea-green, 0 0 10px $dark-sea-green,
-          0 0 20px $dark-sea-green;
-      }
+    &:hover {
+      color: white;
+      text-shadow: 0 0 2px #fff, 0 0 5px #fff,
+        0 0 10px $forest-green-traditional, 0 0 15px $forest-green-traditional,
+        0 0 10px $forest-green-traditional, 0 0 20px $forest-green-traditional;
     }
   }
+}
+
+.arrow {
+  font-size: rem(15);
 }
