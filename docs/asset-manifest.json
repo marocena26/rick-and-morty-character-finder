@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.99a5231c.css",
-    "main.js": "./static/js/main.3e9a5ff3.js",
+    "main.css": "./static/css/main.e2ac129b.css",
+    "main.js": "./static/js/main.3f192cbd.js",
     "static/media/Rick_and_Morty_title_card.png": "./static/media/Rick_and_Morty_title_card.86f57acb7686660618ca.png",
+    "static/media/error-removebg-preview.png": "./static/media/error-removebg-preview.99f56db035504635df77.png",
+    "static/media/error-removebg-preview (2).png": "./static/media/error-removebg-preview (2).1cdf3a6289ecc555b0fb.png",
     "index.html": "./index.html",
-    "main.99a5231c.css.map": "./static/css/main.99a5231c.css.map",
-    "main.3e9a5ff3.js.map": "./static/js/main.3e9a5ff3.js.map"
+    "main.e2ac129b.css.map": "./static/css/main.e2ac129b.css.map",
+    "main.3f192cbd.js.map": "./static/js/main.3f192cbd.js.map"
   },
   "entrypoints": [
-    "static/css/main.99a5231c.css",
-    "static/js/main.3e9a5ff3.js"
+    "static/css/main.e2ac129b.css",
+    "static/js/main.3f192cbd.js"
   ]
 }
